@@ -155,30 +155,39 @@ def pseudoGui():
     #     )
     print("Nothing")
 
-def pseudoSwitch(choose):
-    # if choose == "1" or choose == "en->bg" :
-    if checkSupportedLanguage("en", "bg", choose):
-        if choose == "en->bg" :
-            while True:
-                source = input("Write translation from EN to BG: " + "\n")
-                
-                languageChoose("en", "bg", source)
-        else :
-            print("error") # in the future when we separate en->es as en, es.
-    else:
-        print("Language is not supported")
-
 
 
 def main():
     while True:
-        choose = input(
-            "You need to choose, for example, write: en->es" + "\n"
+        choose1 = input(
+            "You need to choose, for example, write: en" + "\n"
         )
 
-        pseudoSwitch(choose)
+        # if checkSupportedLanguage("en", "bg", choose):
 
-        print("error") # in the future when we separate en->es as en, es.
+        match choose1:
+        #     case "en->bg":
+        #         while True:
+        #             source = input("Write translation from EN to BG: " + "\n")
+                    
+        #             languageChoose("en", "bg", source)
+        #     case _:
+        #         print("error") # in the future when we separate en->es as en, es.
+            case en:
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case bg:
+                        source = input("Write translation from "+choose1+" to "+choose2+": " + "\n")
+                        while True:
+                            print("> ", end='')
+                            source = input()
+                            languageChoose(choose1, choose2, source)
+        # else:
+        #     print("Language is not supported")
+
+        # print("error") # in the future when we separate en->es as en, es.
 
 
 
