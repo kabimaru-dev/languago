@@ -126,8 +126,6 @@ def checkSupportedLanguage(sourceLanguage, targetLanguage, choose):
 def pseudoGui():
     print("Nothing")
 
-
-
 def main():
     while True:
         choose1 = input(
@@ -135,19 +133,449 @@ def main():
         )
 
         match choose1:
-            case en:
+            case "sq":
                 choose2 = input(
                     "You need to choose, for example, write: bg" + "\n"
                 )
                 match choose2:
-                    case bg:
-                        source = input("Write translation from "+choose1+" to "+choose2+": " + "\n")
+                    case en:
+                        print("In realease") 
+            case "sq":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")         
+            case "ar":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "az":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "eu":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "bn":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "bg":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("Now IS Realized")
+            case "ca":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "zt":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "zh":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "cs":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "da":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "nl":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "en":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case "sq":
+                        print("In realease")
+                    case "ar":
+                        print("In realease")
+                    case "az":
+                        print("In realease")
+                    case "eu":
+                        print("In realease")
+                    case "bn":
+                        print("In realease")
+                    case "bg":
+                        print("Write translation from "+choose1+" to "+choose2+": ")
                         while True:
                             print("> ", end='')
                             source = input()
                             languageChoose(choose1, choose2, source)
-
-
+                    case "ca":
+                        print("In realease")
+                    case "zh":
+                        print("In realease")
+                    case "zt":
+                        print("In realease")
+                    case "cs":
+                        print("In realease")
+                    case "da":
+                        print("In realease")
+                    case "nl":
+                        print("In realease")
+                    case "eo":
+                        print("In realease")
+                    case "et":
+                        print("In realease")
+                    case "fi":
+                        print("In realease")
+                    case "fr":
+                        print("In realease")
+                    case "gl":
+                        print("In realease")
+                    case "de":
+                        print("In realease")
+                    case "el":
+                        print("In realease")
+                    case "he":
+                        print("In realease")
+                    case "hi":
+                        print("In realease")
+                    case "hu":
+                        print("In realease")
+                    case "id":
+                        print("In realease")
+                    case "ga":
+                        print("In realease")
+                    case "it":
+                        print("In realease")
+                    case "ja":
+                        print("In realease")
+                    case "ko":
+                        print("In realease")
+                    case "ky":
+                        print("In realease")
+                    case "lv":
+                        print("In realease")
+                    case "lt":
+                        print("In realease")
+                    case "ms":
+                        print("In realease")
+                    case "nb":
+                        print("In realease")
+                    case "fa":
+                        print("In realease")
+                    case "pl":
+                        print("In realease")
+                    case "pt":
+                        print("In realease")
+                    case "pb":
+                        print("In realease")
+                    case "ro":
+                        print("In realease")
+                    case "ru":
+                        print("Russia is now")
+                    case "sk":
+                        print("In realease")
+                    case "sl":
+                        print("In realease")
+                    case "es":
+                        print("In realease")
+                    case "sv":
+                        print("In realease")
+                    case "tl":
+                        print("In realease")
+                    case "th":
+                        print("In realease")
+                    case "tr":
+                        print("In realease")
+                    case "uk":
+                        print("In realease")
+                    case "ur":
+                        print("In realease")
+                    case "vi":
+                        print("In realease")
+            case "et":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "fi":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "fr":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "gl":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "de":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "el":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "he":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "hi":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "hu":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "id":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "ga":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "it":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "ja":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "ko":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "ky":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "lv":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "lt":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "ms":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "nb":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "fa":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "pl":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "pb":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "pt":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case "en":
+                        print("In realease")
+                    case "es":
+                        print("In realease")
+            case "po":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "ru":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("Not in realease")
+            case "sk":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "sl":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "es":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "sv":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "tl":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "th":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "tr":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "uk":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "ur":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
+            case "vi":
+                choose2 = input(
+                    "You need to choose, for example, write: bg" + "\n"
+                )
+                match choose2:
+                    case en:
+                        print("In realease")
 
 
 
