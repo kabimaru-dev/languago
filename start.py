@@ -1,15 +1,19 @@
-import subprocess
+import requests
 
 
 
-def languageChoose(sourceLanguage, targetLanguage, sentance):
-    return subprocess.run(
-        'curl -X POST http://localhost:5000/translate -d q="' + sentance + 
-        '" -d source=' + sourceLanguage +
-        ' -d target=' + targetLanguage, 
-        shell=True, 
-        check=True
+def languageChoose(source_language, target_language, sentence):
+    response = requests.post(
+        "http://localhost:5000/translate",
+        data={
+            "q": sentence,
+            "source": source_language,
+            "target": target_language,
+        }
     )
+
+    response.raise_for_status()
+    return response.text
 
 def checkSupportedLanguage(sourceLanguage, targetLanguage, choose):
     
@@ -126,6 +130,23 @@ def checkSupportedLanguage(sourceLanguage, targetLanguage, choose):
 def pseudoGui():
     print("Nothing")
 
+def strConverter(input):
+    result = ""
+    # print(type(str(input)))
+    input = str(input)
+    # print(input)
+    # print(input.__len__())
+    for i in range(input.__len__()):
+        i += 18
+        if "\"" in input[i-1]:
+            i += 1
+            while not "\"" in input[i-1]:
+                result += input[i-1]
+                i += 1
+            
+            return result
+    
+
 def main():
     while True:
         choose1 = input(
@@ -180,8 +201,23 @@ def main():
                     "You need to choose, for example, write: bg" + "\n"
                 )
                 match choose2:
-                    case en:
-                        print("Now IS Realized")
+                    case "en":
+                        print("Write translation from "+choose1+" to "+choose2+": ")
+                        while True:
+                            print("> ", end='')
+                            source = input()
+                            languageChoose(choose1, choose2, source)
+                    case "ru":
+                        print("Write translation from "+choose1+" to "+choose2+": ")
+                        while True:
+                            print("> ", end='')
+                            source = input()
+                            # print(source)
+                            # source = strConverter(languageChoose("bg", "en", source))
+                            # print(source)
+                            # print(languageChoose("bg", "en", source))
+                            source = strConverter(languageChoose("bg", "en", source))
+                            print(strConverter(languageChoose("en", "ru", source)))
             case "ca":
                 choose2 = input(
                     "You need to choose, for example, write: bg" + "\n"
@@ -308,7 +344,11 @@ def main():
                     case "ro":
                         print("In realease")
                     case "ru":
-                        print("Russia is now")
+                        print("Write translation from "+choose1+" to "+choose2+": ")
+                        while True:
+                            print("> ", end='')
+                            source = input()
+                            languageChoose(choose1, choose2, source)
                     case "sk":
                         print("In realease")
                     case "sl":
@@ -504,8 +544,19 @@ def main():
                     "You need to choose, for example, write: bg" + "\n"
                 )
                 match choose2:
-                    case en:
-                        print("Not in realease")
+                    case "en":
+                        print("Write translation from "+choose1+" to "+choose2+": ")
+                        while True:
+                            print("> ", end='')
+                            source = input()
+                            languageChoose(choose1, choose2, source)
+                    case "bg":
+                        print("Write translation from "+choose1+" to "+choose2+": ")
+                        while True:
+                            print("> ", end='')
+                            source = input()
+                            source = strConverter(languageChoose("ru", "en", source))
+                            print(strConverter(languageChoose("en", "bg", source)))
             case "sk":
                 choose2 = input(
                     "You need to choose, for example, write: bg" + "\n"
