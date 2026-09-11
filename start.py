@@ -116,43 +116,14 @@ def checkSupportedLanguage(sourceLanguage, targetLanguage, choose):
 
     print("size of arrayLanguages : ", supportedLanguage.__len__())
 
-
-
     for i in range(supportedLanguage.__len__()):
         if (i-1) % 2:
-            # print(type(supportedLanguage[i][0]), "==", type(choose))
-            # print(supportedLanguage[i][0], "==", choose)
-            # print(supportedLanguage[i][0] == choose)
             if supportedLanguage[i][0] == choose:
                 return True
-        
+
     return False
 
-        # else:
-        #     return False
-
-    # supportedLanguage[]
-
-    # for i in range(supportedLanguage.__len__()):
-    #     if supportedLanguage[i] == choose :
-    #         return True
-
-
-    # return True or False
-
 def pseudoGui():
-    #     for i in range(0-100):
-            
-
-    #     return (
-    #         "Choose: " + "\n" +
-    #         "1. en->bg" + "\n" +
-    #         "2. en->ru" + "\n" +
-    #         "3. bg->en" + "\n" +
-    #         "4. bg->ru" + "\n" +
-    #         "5. ru->en" + "\n" +
-    #         "6. ru->bg" + "\n"
-    #     )
     print("Nothing")
 
 
@@ -163,16 +134,7 @@ def main():
             "You need to choose, for example, write: en" + "\n"
         )
 
-        # if checkSupportedLanguage("en", "bg", choose):
-
         match choose1:
-        #     case "en->bg":
-        #         while True:
-        #             source = input("Write translation from EN to BG: " + "\n")
-                    
-        #             languageChoose("en", "bg", source)
-        #     case _:
-        #         print("error") # in the future when we separate en->es as en, es.
             case en:
                 choose2 = input(
                     "You need to choose, for example, write: bg" + "\n"
@@ -184,10 +146,6 @@ def main():
                             print("> ", end='')
                             source = input()
                             languageChoose(choose1, choose2, source)
-        # else:
-        #     print("Language is not supported")
-
-        # print("error") # in the future when we separate en->es as en, es.
 
 
 
