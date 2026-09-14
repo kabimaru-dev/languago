@@ -4,6 +4,7 @@ Program for study language
 For start program, use this:
 ```
 npm install sass
+npm install axios
 ```
 ```
 cd views/
