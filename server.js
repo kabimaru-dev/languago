@@ -1,7 +1,17 @@
 const http = require("http");
 
 const send_response = function (request, response) {
-  response.end("Hello, World!");
+  console.log(request.method, request.url);
+
+  if (request.url === "/") {
+    response.end("/");
+  }
+  else if (request.url === "/home") {
+    response.end("/home");
+  }
+  else {
+    response.end("Wrong page!");
+  }
 };
 
 const start_server = function () {
