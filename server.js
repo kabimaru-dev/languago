@@ -7,7 +7,7 @@ const send_response = function (request, response) {
   console.log(request.method, request.url);
   
   if (request.url === "/") {
-    const page = fs.readFileSync("./views/App.js", "utf8");
+    const page = fs.readFileSync("./views/public/index.html", "utf8");
 
     response.writeHead(200, {
       "Content-Type": "text/html; charset=utf-8"  
