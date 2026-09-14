@@ -1,16 +1,27 @@
 const http = require("http");
+const fs = require("fs");
+
+
 
 const send_response = function (request, response) {
   console.log(request.method, request.url);
-
+  
   if (request.url === "/") {
-    response.end("/");
+    response.writeHead(200, {
+      "Content-Type": "text/html; charset=utf-8"  
+    });
+
+    response.end("<h1>/</h1>");
   }
-  else if (request.url === "/home") {
-    response.end("/home");
+  else if (request.url === "/notahome") {
+    response.writeHead(200, {
+      "Content-Type": "text/html; charset=utf-8"  
+    });
+
+    response.end("<h1>/notahome</h1>");
   }
   else {
-    response.end("Wrong page!");
+    response.end("<h1>Wrong page!</h1>");
   }
 };
 
