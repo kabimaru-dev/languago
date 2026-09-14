@@ -1,0 +1,19 @@
+{
+  "name": "languago",
+  "version": "1.0.0",
+  "description": "Program for study language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabimaru-dev/languago.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kabimaru-dev/languago/issues"
+  },
+  "homepage": "https://github.com/kabimaru-dev/languago#readme"
+}

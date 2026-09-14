@@ -159,20 +159,16 @@ def main():
     )
 
     while True:
+        first, second = "", ""
+        first += mainLanguage[0]
+        first += mainLanguage[1]
+        second += mainLanguage[4]
+        second += mainLanguage[5]
+
         if checkSupportedLanguage(mainLanguage) == True:
-            first, second = "", ""
-            first += mainLanguage[0]
-            first += mainLanguage[1]
-            second += mainLanguage[4]
-            second += mainLanguage[5]
             source = input()
             print(strConverter(languageChoose(first, second, source)))
         elif checkSupportedLanguage(mainLanguage) == False:
-            first, second = "", ""
-            first += mainLanguage[0]
-            first += mainLanguage[1]
-            second += mainLanguage[4]
-            second += mainLanguage[5]
             source = input()
             source = strConverter(languageChoose(first, "en", source))
             print(strConverter(languageChoose("en", second, source)))
