@@ -18,5 +18,8 @@
   "homepage": "https://github.com/kabimaru-dev/languago#readme",
   "devDependencies": {
     "@types/node": "^26.5.1"
+  },
+  "dependencies": {
+    "sass": "^1.104.1"
   }
 }
